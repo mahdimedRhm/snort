@@ -2,7 +2,7 @@
 
 # changing the sources.list
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
-find /var/lib/apt/lists -type f -exec rm -rf{} \;
+find /var/lib/apt/lists -type f -exec rm -rf {} \;
 # download ubuntu source.list
 wget https://gist.githubusercontent.com/ishad0w/788555191c7037e249a439542c53e170/raw/3822ba49241e6fd851ca1c1cbcc4d7e87382f484/sources.list -O /etc/apt/sources.list
 
@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install snort
 
 # return the sources list of kali
-find /var/lib/apt/lists -type f -exec rm -rf{} \;
+find /var/lib/apt/lists -type f -exec rm -rf {} \;
 mv /etc/apt/sources.list /etc/apt/ubuntu_sources.list
 mv /etc/apt/sources.list.bak /etc/apt/sources.list
 
